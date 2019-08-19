@@ -10,7 +10,9 @@ import pandas as pd
 import numpy as np
 import sys
 import random
-if __name__=="main":
+
+
+if __name__ == "__main__": 
     x, d_dir, folds = sys.argv # input dataset directory (csv format) and #folds into terminal
     q = int(folds)
     df= pd.read_csv(d_dir, header=None)
@@ -34,8 +36,8 @@ if __name__=="main":
     #Test is strata generated properly
     """
     for val in strata:
-    print(val)
-    print("\n")
+        print(val)
+        print("\n")
     """
     return strata
 
