@@ -10,7 +10,7 @@ import numpy as np
 import sys
 
 d_dir = sys.argv[1] # input dataset directory (csv format) into terminal
-df= pd.read_csv(d_dir, header=None)
+df= pd.read_csv(d_dir, header=None) # edit "header=" option based on your dataset
 N,c= df.shape
 df= df.sort_values(df.columns[-1]) #sort by ouput attribute
 
