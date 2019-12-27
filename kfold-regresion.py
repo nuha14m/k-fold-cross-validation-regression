@@ -33,7 +33,7 @@ if __name__ == "__main__":
     for k in range(mod, 0, -1):
         st= random.randint(1,10)
         strata[st]=strata[st].append(df.iloc[N-k,:])
-    #Test is strata generated properly
+    #Test if strata generated properly
     """
     for val in strata:
         print(val)
